@@ -1,4 +1,5 @@
 import streamlit as st
 
-st.write("hello, world")
---123
+твой_ответ = st.selectbox('Выбирай мудро',options=['1', '2', '3'])
+
+st.write(f"{твой_ответ = }")
