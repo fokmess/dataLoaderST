@@ -1,5 +1,11 @@
 import streamlit as st
 
-твой_ответ = st.selectbox('Выбирай мудро',options=['1', '2', '3'])
+res = st.selectbox('Выбирай мудро',options=['.Банк', 'Y', 'ITPR'])
 
-st.write(f"{твой_ответ = }")
+match res:
+    case '.Банк':
+        st.image("img/H.png")
+    case 'Y':
+        st.image("img/Y.jpeg")
+    case 'ITPR':
+        st.image("img/True.jpg")
