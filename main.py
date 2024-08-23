@@ -1,6 +1,6 @@
 import streamlit as st
 
-res = st.selectbox('Выбирай мудро',options=['.Банк', 'Y', 'ITPR'])
+res = st.selectbox('Выбирай мудро',options=['.Банк', 'Y', 'ITPR'], index=None)
 
 match res:
     case '.Банк':
